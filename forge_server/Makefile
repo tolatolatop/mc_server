@@ -1,4 +1,4 @@
-.PHONY:build run stop clean_c
+.PHONY:build run stop clean_c clean_i
 build:
 	docker build . -t forge_server:0.5.0 -t forge_server:latest
 
@@ -10,6 +10,9 @@ stop:
 
 clean_c:
 	docker rm mc_server
+
+clean_i:
+	docker image rm forge_server:0.5.0 forge_server:latest
 
 attach:
 	docker attach --sig-proxy=false mc_server
