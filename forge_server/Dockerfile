@@ -3,4 +3,5 @@ WORKDIR /root/
 COPY . .
 RUN bash init.sh
 WORKDIR /root/bin
+EXPOSE 25565
 CMD ["bash", "run.sh"]
