@@ -10,3 +10,6 @@ stop:
 
 clean_c:
 	docker rm mc_server
+
+attach:
+	docker attach --sig-proxy=false mc_server
