@@ -1,4 +1,4 @@
-FROM openjdk:17.0.2-jdk
+FROM game_server:0.5.0
 WORKDIR /root/
 COPY . .
 RUN bash init.sh
