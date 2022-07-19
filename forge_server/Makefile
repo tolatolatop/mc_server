@@ -3,7 +3,7 @@ build:
 	docker build . -t forge_server:0.5.0 -t forge_server:latest
 
 run:
-	docker run -itd --name mc_server forge_server:0.5.0
+	docker run -itd -p 25565:25565 --name mc_server forge_server:0.5.0
 
 stop:
 	docker stop mc_server
@@ -15,4 +15,4 @@ clean_i:
 	docker image rm forge_server:0.5.0 forge_server:latest
 
 attach:
-	docker attach --sig-proxy=false mc_server
+	docker attach mc_server
