@@ -2,4 +2,5 @@ FROM openjdk:17.0.2-jdk
 WORKDIR /root/
 COPY . .
 RUN bash init.sh
-CMD ["bash", "bin/run.sh"]
+WORKDIR /root/bin
+CMD ["bash", "run.sh"]
