@@ -1,0 +1,16 @@
+version: '3'
+services:
+  minecraft:
+    container_name: mc_server
+    image: forge_server
+    restart: always
+    ports:
+      - 25565:25565
+    environment:
+      OSSID: OSSID
+      OSSKEY: OSSKEY
+    volumes:
+      - mc_server:/root/bin/world
+
+volumes:
+  mc_server:
