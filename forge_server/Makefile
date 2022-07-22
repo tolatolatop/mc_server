@@ -12,6 +12,10 @@ push:
 	docker tag forge_server:0.5.0 ${REPO}/forge_server:0.5.0
 	docker push ${REPO}/forge_server:0.5.0
 
+pull:
+	docker pull ${REPO}/forge_server:0.5.0
+	docker tag ${REPO}/forge_server:0.5.0 forge_server:0.5.0
+
 clean_c:
 	docker rm mc_server
 
