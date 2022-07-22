@@ -9,6 +9,7 @@ services:
     environment:
       OSSID: OSSID
       OSSKEY: OSSKEY
+      BUCKET: BUCKET
     volumes:
       - mc_server:/root/bin/world
 
