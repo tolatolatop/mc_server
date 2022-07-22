@@ -9,6 +9,7 @@ stop:
 	docker stop mc_server
 
 push:
+	docker tag forge_server:0.5.0 ${REPO}/forge_server:0.5.0
 	docker push ${REPO}/forge_server:0.5.0
 
 clean_c:
