@@ -1,4 +1,4 @@
-.PHONY:build run stop clean_c clean_i
+.PHONY:build run stop clean_c clean_i push
 build:
 	docker build . -t forge_server:0.5.0 -t forge_server:latest
 
@@ -7,6 +7,9 @@ run:
 
 stop:
 	docker stop mc_server
+
+push:
+	docker push ${REPO}/forge_server:0.5.0
 
 clean_c:
 	docker rm mc_server
