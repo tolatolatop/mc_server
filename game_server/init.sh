@@ -7,3 +7,8 @@ curl -L -O https://cosbrowser.cloud.tencent.com/software/coscli/coscli-linux
 chmod 755 coscli-linux
 mv coscli-linux /usr/local/bin/coscli
 coscli --version
+
+curl https://rclone.org/install.sh | bash
+
+mkdir -p /etc/cron.d/
+echo '0     */1       *       *       *       bash /root/backup.sh > /dev/null' >> /etc/crontabs/root
