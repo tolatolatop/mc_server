@@ -1,4 +1,4 @@
-FROM openjdk:17.0.2-jdk
+FROM openjdk:17-alpine3.14
 WORKDIR /root/
 COPY . .
 RUN bash init.sh
