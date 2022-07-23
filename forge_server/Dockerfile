@@ -1,4 +1,4 @@
-FROM game_server:0.5.0
+FROM game_server:0.5.1
 WORKDIR /root/
 COPY . .
 RUN bash init.sh
