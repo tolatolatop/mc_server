@@ -1,4 +1,4 @@
-.PHONY:build run stop clean_c clean_i push
+.PHONY:build run stop clean_c clean_i push pull
 build:
 	docker build . -t forge_server:0.5.0 -t forge_server:latest
 
