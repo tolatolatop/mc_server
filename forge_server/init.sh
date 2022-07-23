@@ -6,4 +6,7 @@ curl -O https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.1.60
 java -jar forge-1.18.2-40.1.60-installer.jar --installServer
 bash run.sh
 sed -i 's/eula=false/eula=true/g' eula.txt
+. run.sh <<EOF
++stop
++EOF
 popd

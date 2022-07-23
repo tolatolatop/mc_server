@@ -15,5 +15,5 @@ pushd bin
 coscli sync -r cos://game/minecraft/mods/ mods
 coscli sync cos://game/minecraft/config/server.properties server.properties
 coscli sync cos://game/minecraft/world/latest.tar.gz latest.tar.gz
-tar -zx latest.tar.gz world
+tar -zxvf latest.tar.gz
 . run.sh
