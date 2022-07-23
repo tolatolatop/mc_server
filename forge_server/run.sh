@@ -14,4 +14,6 @@ EOF
 pushd bin
 coscli sync -r cos://game/minecraft/mods/ mods
 coscli sync cos://game/minecraft/config/server.properties server.properties
+coscli sync cos://game/minecraft/config/latest.tar.gz latest.tar.gz
+tar -zx latest.tar.gz world
 . run.sh
