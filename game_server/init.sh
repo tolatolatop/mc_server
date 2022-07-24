@@ -10,5 +10,5 @@ coscli --version
 
 curl https://rclone.org/install.sh | bash
 
-mkdir -p /etc/cron.d/
-echo '0     */1       *       *       *       bash /root/backup.sh > /dev/null' >> /etc/crontabs/root
+echo '0	*/1	*	*	*	bash /root/backup.sh > /dev/null' >> /etc/crontabs/root
+crond
